@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" 
+   />
+    <link rel="stylesheet" href="about.css">
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Agent PEKKA</a></div>
+              <ul class="links">
+                <li><a href="camilo.html">CAMILO HUINCA</a></li>
+                <li><a href="timlahan.html">TIM LAHAN</a></li>
+                <li><a href="karlottafreier.html">KARLOTTA FREIER</a></li>
+                <li><a href="xoanaherrera.html">XOANNA HERRERA</a></li>
+                <li><a href="laboca.html">LA BOCA</a></li>
+                <li><a href="linn-fritz.html">LINN-FRTIZ</a></li>
+              </ul>
+             <a href="about.html" class="action_btn">ABOUT</a>
+             <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+             </div>
+         </div>
+        <div class="dropdown_menu">
+            <li><a href="camilo.html">CAMILO HUINCA</a></li>
+            <li><a href="timlahan.html">TIM LAHAN</a></li>
+            <li><a href="karlottafreier.html">KARLOTTA FREIER</a></li>
+            <li><a href="xoanaherrera.html">XOANNA HERRERA</a></li>
+            <li><a href="laboca.html">LA BOCA</a></li>
+            <li><a href="linn-fritz.html">LINN-FRTIZ</a></li>
+            <li><a href="about.html" class="action_btn">ABOUT</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+         const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+           }
+    </script>
+    <div class="imgContainer">
+        <img class="sfondo" src="immagini/about_sfondo.jpg" alt="sfondo"/>
+    </div>
+    <div class="info">
+        <p>We’re a global collaboration agency representing a hand-picked group of artists working across a wide range of disciplines, from 3D and animation to illustration and typography. Founded in 2007, our offices are based in Helsinki, Amsterdam, Los Angeles and New York.
+
+            Our artists are highly admired by their peers, with styles as diverse as they are distinctive. Representing both established names and the very best newcomers from around the world, our roster celebrates diversity and unique artistic expression.
+            
+            Building close and long-lasting relationships throughout each project we take on, we act as a trusted partner for our artists and a reliable resource for our clients.
+            
+            We’re represented in China by our local partner, V/Collective.</p>
+    </div>
+    <section>
+        <h1>our team</h1>
+    </section>
+    <div class="container card1">
+        <h5>Founder & Director</h5>
+    </div>
+    <div class="container card2">
+        <h5>Senior rep & Partner</h5>
+    </div>
+    <div class="container card3">
+        <h5>Artist rep & Producer</h5>
+    </div>
+    <div class="container card4">
+        <h5>Artist rep & Producer</h5>
+    </div>
+    <div class="container card5">
+        <h5>Head of operations</h5>
+    </div>
+    <footer>
+        <p>Get the PEKKA newsletter</p>
+        <h1>PEKKA@AGENTPEKKA.COM</h1>
+    </footer>
+</body>

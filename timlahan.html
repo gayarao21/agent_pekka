@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" 
+        />
+        
+     <link rel="stylesheet" href="timlahan.css">
+     <title>Tim Lahan</title>
+  </head>
+  <body>
+      <header>
+         <div class="navbar">
+             <div class="logo"><a href="index.html">Agent PEKKA</a></div>
+               <ul class="links">
+                 <li><a href="camilo.html">CAMILO HUINCA</a></li>
+                 <li><a href="timlahan.html">TIM LAHAN</a></li>
+                 <li><a href="karlottafreier.html">KARLOTTA FREIER</a></li>
+                 <li><a href="xoanaherrera.html">XOANNA HERRERA</a></li>
+                 <li><a href="laboca.html">LA BOCA</a></li>
+                 <li><a href="linn-fritz.html">LINN-FRTIZ</a></li>
+               </ul>
+              <a href="about.html" class="action_btn">ABOUT</a>
+              <div class="toggle_btn">
+                 <i class="fa-solid fa-bars"></i>
+              </div>
+          </div>
+         <div class="dropdown_menu">
+             <li><a href="camilo.html">CAMILO HUINCA</a></li>
+             <li><a href="timlahan.html">TIM LAHAN</a></li>
+             <li><a href="karlottafreier.html">KARLOTTA FREIER</a></li>
+             <li><a href="xoanaherrera.html">XOANNA HERRERA</a></li>
+             <li><a href="laboca.html">LA BOCA</a></li>
+             <li><a href="linn-fritz.html">LINN-FRTIZ</a></li>
+             <li><a href="about.html" class="action_btn">ABOUT</a></li>
+         </div>
+      </header>
+       <script>
+         const toggleBtn = document.querySelector('.toggle_btn')
+          const toggleBtnIcon = document.querySelector('.toggle_btn i')
+         const dropDownMenu = document.querySelector('.dropdown_menu')
+
+         toggleBtn.onclick = function () {
+             dropDownMenu.classList.toggle('open')
+             const isOpen = dropDownMenu.classList.contains('open')
+
+             toggleBtnIcon.classList = isOpen
+             ? 'fa-solid fa-xmark'
+             : 'fa-solid fa-bars'
+            }
+       </script>
+         <div class="card">
+            <img class="sfondo" src="immagini/sfondo_tim-lahan.jpeg" alt="sfondo">
+            <h1>illustrator</h1>
+            <p>TIM LAHAN</p>
+            <div class="bio">BIOGRAPHY</div>
+            <div>WORK</div>
+        </div>
+        <div class="info">
+            <h1>biography</h1>
+            <p>San Francisco-based artist Tim Lahan’s naughty, witty artwork is the 
+                product of his ability to digest and illustrate clever glitches, concepts 
+                and interesting visual cues from the world around him. 
+                “I generally aim to make things as simple as possible,” says Tim. 
+                “Sometimes they come out funny.” Generally commissioned to bring a touch 
+                of joy to magazines, brand campaigns and music collateral, the ADC Young Gun award winner’s 
+                instantly recognisable style is enviably simple and genuinely funny: something very few illustrators
+                 can boast.
+             </p>
+        </div>
+        <section>
+          <h1>works</h1>
+      </section>
+      <div class="container card1">
+          <h5>Emotions</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+      <div class="container card2">
+          <h5>One Medical</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+      <div class="container card3">
+          <h5>The Baffler</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+      <div class="container card4">
+          <h5>MC Sightglass</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+      <footer>
+         <p>Get the PEKKA newsletter</p>
+         <h1>PEKKA@AGENTPEKKA.COM</h1>
+      </footer>
+  </body>   
+</html>  

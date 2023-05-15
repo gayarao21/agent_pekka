@@ -1,0 +1,456 @@
+body{
+    margin: 0;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    background-color: #4b83f2;
+    height: 100vh;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    font-family: 'inter', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: #2A4272;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: #2A4272;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 300px;
+}
+
+.dropdown_menu li{
+    background-color: rgba(40, 118, 254, 0.797);
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.imgContainer {
+    display: flex;
+}
+    
+div.imgContainer .sfondo {
+    max-width: 100%;
+    margin: 0; 
+}
+
+.info {
+    color: #fff;
+    margin: 5rem;
+}
+
+.info p{
+    margin: 0rem 6rem 0rem 6rem
+}
+
+section {
+    color: #fff;
+    margin: 1rem, 0 1rem 5rem;
+}
+
+section h1{
+    margin: 1rem 0rem 1rem 11rem;
+    font-size: 3rem;
+}
+
+.container{
+    width: 150px;
+    height: 225px;
+    display: inline-block;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 1rem 2.5rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1{
+    background-image: url(immagini/pablosteffa.jpeg);
+    margin-left: 13rem;
+}
+
+.card2{
+    background-image: url(immagini/petrakoivisto.png);
+}
+
+.card3{
+    background-image: url(immagini/carolinesvenssonjudge.png);
+}
+
+.card4{
+    background-image: url(immagini/laurenmalizia.png);
+}
+
+.card5{
+    background-image: url(immagini/cherylmasaitis.png);
+}
+
+
+.container:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #717070;
+    background: none;
+    font-size: small;
+}
+
+
+footer{
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+footer {
+    margin: auto;
+    padding: 2rem;
+    gap: 20rem;
+    color: #4b83f2;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+}
+
+footer h1{
+    font-size: medium;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+
+@media(max-width:1470px){
+    footer p{
+        margin-top: 1rem;
+    } 
+    .card1{
+        margin-left: 11rem;
+    }
+}
+
+@media(max-width:1170px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1350px){
+    .card5{
+        margin-right: 7rem;
+        margin-left: 11rem;
+    }
+
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1251px){
+    .card4{
+        margin-left: 3rem;
+    }
+}
+
+@media(max-width:1220px){
+    .card h1{
+        font-size: 5rem;
+    }
+    .card p{
+        font-size: 4rem;
+        margin-bottom: 20rem;
+    }
+    .card div{
+        font-size: 2rem;
+    }
+
+    .card3{
+        margin-left: 3rem;
+    }
+    .card4{
+        margin-left: 3rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1215px){
+    .card4{
+        margin-left: 11rem;
+    }
+    .card5{
+        margin-left: 3rem;
+    }
+}
+@media(max-width:1200px){
+    .card3{
+        margin-left: 3rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1090px){
+    .card{
+        height:700px;
+    }
+    .card h1{
+        font-size: 4.5rem;
+    }
+
+    .card2{
+        margin-left: 3rem;
+    }
+    .card3{
+        margin-left: 3rem;
+    }
+    .card4{
+        margin-right: 3rem
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1000px){
+    .card3{
+        margin-left: 3rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:900px){
+    .card{
+        height: 550px;
+    }
+
+    .card h1{
+        font-size: 3.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .card div{
+        font-size: 1.5rem;
+    }
+    .info{
+        margin:5rem 1rem 5rem 1rem;
+    }
+
+    section{
+        margin-left: -4rem;
+    }
+
+    .card1{
+        margin-left: 7rem;
+    }
+    .card2{
+        margin-left: 5rem;
+    }
+    .card3{
+        margin-left: 5rem;
+    }
+    .card4{
+        margin-left: 7rem;
+    }
+    .card5{
+        margin-left: 5rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:852px){
+    .card{
+        height: 450px;
+    }
+    .card .sfondo{
+        height: 15rem;
+        margin-top: 11rem;
+    }
+    .card h1{
+        font-size: 3rem;
+    }
+    .card p{
+        font-size: 2.5rem;
+        margin-bottom: 12rem;
+    }
+    .card2{
+        margin-left: 7rem;
+    }
+    .card3{
+        margin-left: 7rem;
+    }
+    .card5{
+        margin-left: 7rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:748px){
+
+    .card h1{
+        font-size: 2.5rem;
+    }
+    .card p{
+        margin-bottom: 8rem;
+    }
+    .card3{
+        margin-left: 7rem;
+    }
+    footer p{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:700px){
+    .card .sfondo{
+        height: 11rem;
+        margin-top: 10rem;
+    }
+    .card h1{
+        font-size: 2rem;
+    }
+    .card p{
+        font-size: 2rem;
+        margin-bottom: 9rem;
+    }
+    .card2{
+        margin-left: 7rem;
+    }
+}
+
+@media(max-width:600px){
+    .card{
+        height: 300px;
+    }
+    .card .sfondo{
+        height: 9rem;
+        margin-top: 8rem;
+    }
+    .card p{
+        font-size: 1.8rem;
+        margin-bottom: 7rem;
+    }
+    .card div{
+        font-size: 1rem;
+    }
+    .card2{
+        margin-left: 7rem;
+    }
+}
+@media(max-width:800px){
+    footer{
+        gap: 5rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}

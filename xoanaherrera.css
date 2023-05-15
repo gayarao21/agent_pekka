@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #4B82F1;
+    font-family: 'inter', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: #2A4272;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: #2A4272;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 300px;
+}
+
+.dropdown_menu li{
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: #fff;
+    height: 750px;
+}
+
+.card .sfondo{
+    height: 25rem;
+    float: right;
+    margin: left;
+    margin-top: 22rem;
+    background-color: #fff;
+}
+
+.card h1{
+    background-color: #fff;
+    color: #2A4272;
+    font-size: 7rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+
+.card p{
+    background-color: #fff;
+    color: #4B82F1;
+    font-size: 6rem;
+    margin-left: 5rem;
+    margin-bottom: 15rem;
+}
+
+.card div{
+    background-color: #fff;
+    color: #4B82F1;
+    margin-left: 5rem;
+    font-size: 2.5rem;
+}
+.info {
+    color: #fff;
+    margin: 5rem;
+}
+
+.info h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    margin: 5rem 6rem 1rem 6rem;
+}
+
+.info p{
+    margin: 0rem 6rem 0rem 6rem
+}
+
+section {
+    color: #fff;
+    margin: 5rem
+}
+
+section h1{
+    margin: 5rem 6rem 1rem 6rem;
+    font-size: 3rem;
+}
+
+.container{
+    width: 220px;
+    height: 300px;
+    display: inline-block;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 1rem 2.5rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1{
+    background-image: url(immagini/xoanaherrera_chut!.jpeg);
+    margin-left: 12rem;
+}
+
+.card2{
+    background-image: url(immagini/xoanaherrera_ensayo_natural.jpeg);
+}
+
+.card3{
+    background-image: url(immagini/xoanaherrera_Nike.jpeg);
+}
+
+.card4{
+    background-image: url(immagini/xoanaherrera_risotto.jpeg);
+    margin-right: 10rem;
+}
+
+.container:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #717070;
+    background: none;
+}
+
+.container p{
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+    background: none;
+}
+
+
+footer {
+    padding: 25px;
+    margin: auto;
+    padding: 2rem;
+    gap: 20rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+}
+
+footer p{
+    margin-top: 1.5rem;
+}
+
+footer h1{
+    font-size: medium;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+@media(max-width:1490px){
+    .card2{
+        margin: 1rem 9rem 1rem 9rem;
+    }
+    .card4{
+        margin-left: 12rem;
+    }
+}
+
+@media(max-width:1470px){
+    .card2{
+        margin: 1rem 7rem 1rem 7rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1440px){
+    .card2{
+        margin: 1rem 5rem 1rem 5rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1170px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1350px){
+    .card h1{
+        font-size: 6rem;
+    }
+    .card p{
+        font-size: 5rem;
+        margin-bottom: 17rem;
+    }
+    .card .bio{
+        margin-bottom: 1rem;
+    }
+    .card div{
+        margin-top: -1rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1220px){
+    .card h1{
+        font-size: 5rem;
+    }
+    .card p{
+        font-size: 4rem;
+        margin-bottom: 20rem;
+    }
+    .card div{
+        font-size: 2rem;
+    }
+    .card3{
+        margin-left: 12rem;
+    }
+    .card4{
+        margin-left: 5rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1200px){
+    .card3{
+        margin-left: 12rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1090px){
+    .card{
+        height:700px;
+    }
+    .card h1{
+        font-size: 4.5rem;
+    }
+    .card p{
+        font-size: 3.5rem;
+        margin-bottom: 23rem;
+    }
+    .card .sfondo{
+        height: 23rem;
+    }
+    .card2{
+        margin: 1rem 5rem 1rem 5rem;
+    }
+    .card3{
+        margin-left: 12rem;
+    }
+    .card4{
+        margin-right: 2rem
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:1000px){
+    .card{
+        height: 650px;
+    }
+    .card .sfondo{
+        height: 20rem;
+    }
+    .card p{
+        font-size: 3rem;
+        margin-bottom: 19rem;
+    }
+    .card2{
+        margin: 1rem 2.5rem 1rem 2.5rem;
+    }
+    .card3{
+        margin-right: 0.5rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:900px){
+    .card{
+        height: 550px;
+    }
+    .card .sfondo{
+        height: 18rem;
+        margin-top: 15rem;
+        padding-right: 2rem;
+    }
+    .card h1{
+        font-size: 3.5rem;
+        padding-top: 2.5rem;
+    }
+    .card p{
+        font-size: 3rem;
+        margin-bottom: 16rem;
+    }
+    .card div{
+        font-size: 1.5rem;
+    }
+    .info{
+        margin:5rem 1rem 5rem 1rem;
+    }
+
+    section{
+        margin:5rem 1rem 1rem 1rem;
+    }
+
+    .card1{
+        margin-left: 7rem;
+    }
+    .card2{
+        margin-left: 5rem;
+    }
+    .card3{
+        margin-left: 7rem;
+    }
+    .card4{
+        margin-left: 7rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:850px){
+    .card{
+        height: 450px;
+    }
+    .card .sfondo{
+        height: 15rem;
+        margin-top: 11rem;
+    }
+    .card h1{
+        font-size: 3rem;
+    }
+    .card p{
+        font-size: 2.5rem;
+        margin-bottom: 12rem;
+    }
+    .card2{
+        margin-left: 5rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:750px){
+    .card{
+        height: 350px;
+    }
+    .card .sfondo{
+        height: 13rem;
+        margin-top: 8rem;
+    }
+    .card h1{
+        font-size: 2.5rem;
+    }
+    .card p{
+        margin-bottom: 8rem;
+    }
+    .card3{
+        margin-right: 12rem;
+    }
+    footer p{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:700px){
+    .card .sfondo{
+        height: 11rem;
+        margin-top: 10rem;
+    }
+    .card h1{
+        font-size: 2rem;
+    }
+    .card p{
+        font-size: 2rem;
+        margin-bottom: 9rem;
+    }
+    .card2{
+        margin-left: 7rem;
+    }
+}
+
+@media(max-width:600px){
+    .card{
+        height: 300px;
+    }
+    .card .sfondo{
+        height: 9rem;
+        margin-top: 8rem;
+    }
+    .card p{
+        font-size: 1.8rem;
+        margin-bottom: 7rem;
+    }
+    .card div{
+        font-size: 1rem;
+    }
+    .card2{
+        margin-left: 7rem;
+    }
+}
+@media(max-width:800px){
+    footer{
+        gap: 5rem;
+    }
+    footer p{
+        margin-top: 1rem;
+    }
+}

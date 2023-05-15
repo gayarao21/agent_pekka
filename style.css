@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    background-color: #4b83f2;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: #2A4272;
+}
+
+.header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.action_btn{
+    background-color: #2A4272;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+div.imgContainer {
+    position: relative; 
+    display: flex;
+}
+    
+div.imgContainer img.sfondo {
+    max-width: 100%;
+    margin: 0; 
+}
+
+/*---css obliquo-- */
+.hero h1{
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.hero h1{
+    font-size: 7rem;
+    color: #ffffff;
+}
+
+.illustrators {
+    margin-left: 7rem;
+    color: #ffffff;
+    display: block;
+}
+
+.illustrators a{
+    font-size: 3rem;
+}
+
+
+.illustrators p:hover{
+    color: #2A4272;
+}
+
+.card{
+    position: relative; 
+    display: flex;
+}
+
+.card{
+    height: 25rem;
+    margin-left: 60rem;
+    padding-bottom: 3rem;
+}
+
+
+footer{
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+footer {
+    margin: auto;
+    padding: 2rem;
+    gap: 20rem;
+    color: #4b83f2;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+}
+
+footer h1{
+    font-size: medium;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+@media(max-width:1350px){
+    .card{
+        margin-left: 50rem;
+    }
+}
+
+@media(max-width:1200px){
+    .card{
+        margin-left: 40rem;
+    }
+}
+
+@media(max-width:1100px){
+    .card{
+        margin-left: 35rem;
+    }
+}
+
+@media(max-width:1000px){
+    .card{
+        margin-left: 30rem;
+        
+    }
+}
+
+@media(max-width:900px){
+    .card{
+        margin-left: 25rem;
+        padding: 3rem;
+    }
+}
+
+@media(max-width:800px){
+    .card{
+        margin-left: 15rem;
+    }
+
+    footer{
+        gap: 5rem;
+    }
+}
+
+@media(max-width:700px){
+    .hero h1{
+        font-size: 5rem;
+        
+    }
+
+    .illustrators{
+        font-size: 0.5rem;
+        margin-left: 5rem;
+    }
+
+    .card{
+        margin-left: 2.5rem;
+    }
+}

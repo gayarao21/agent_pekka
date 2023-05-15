@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" 
+        />
+        
+     <link rel="stylesheet" href="laboca.css">
+     <title>La Boca</title>
+ </head>
+ <body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Agent PEKKA</a></div>
+              <ul class="links">
+               <li><a href="camilo.html">CAMILO HUINCA</a></li>
+               <li><a href="timlahan.html">TIM LAHAN</a></li>
+               <li><a href="karlottafreier.html">KARLOTTA FREIER</a></li>
+               <li><a href="xoanaherrera.html">XOANNA HERRERA</a></li>
+               <li><a href="laboca.html">LA BOCA</a></li>
+               <li><a href="linn-fritz.html">LINN-FRTIZ</a></li>
+             </ul>
+            <a href="about.html" class="action_btn">ABOUT</a>
+            <div class="toggle_btn">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+       <div class="dropdown_menu">
+           <li><a href="camilo.html">CAMILO HUINCA</a></li>
+           <li><a href="timlahan.html">TIM LAHAN</a></li>
+           <li><a href="karlottafreier.html">KARLOTTA FREIER</a></li>
+           <li><a href="xoanaherrera.html">XOANNA HERRERA</a></li>
+           <li><a href="laboca.html">LA BOCA</a></li>
+           <li><a href="linn-fritz.html">LINN-FRTIZ</a></li>
+           <li><a href="about.html" class="action_btn">ABOUT</a></li>
+       </div>
+    </header>
+     <script>
+       const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+       const dropDownMenu = document.querySelector('.dropdown_menu')
+
+       toggleBtn.onclick = function () {
+           dropDownMenu.classList.toggle('open')
+           const isOpen = dropDownMenu.classList.contains('open')
+
+           toggleBtnIcon.classList = isOpen
+           ? 'fa-solid fa-xmark'
+           : 'fa-solid fa-bars'
+          }
+     </script>
+      <div class="card">
+        <img class="sfondo" src="immagini/laboca_sfondo.jpeg" alt="sfondo">
+          <h1>illustrator</h1>
+          <p>LA BOCA</p>
+          <div class="bio">BIOGRAPHY</div>
+          <div>WORK</div>
+      </div>
+      <div class="info">
+        <h1>biography</h1>
+        <p>La Boca have the rare, impressive ability to create designs and artwork resembling 
+           some of the best album sleeves lurking in your dad’s record collection. The studio, 
+           founded in 2002, is based in west London and has gathered an envious collection of 
+           awards, including Cannes Lions, European Design Awards, and the AOI Illustration Awards. 
+           Their exquisitely executed, psychedelic style is the combined result of each of the studio's 
+           members' unique influences, having hailed from London, Bordeaux, Devon and Switzerland. 
+           “We work as a studio, so most of our designs are created as a team,” says Scott Bendall of 
+           La Boca. “It's not unusual to have two or three people working on a single piece.
+           ” Keen to work on more animated projects in the future, the team (based in two studios, 
+           one in London and one in Amsterdam) are never short on work from a selection of devoted clients. 
+           In their own words, La Boca’s creations are: “Retina teasing, tactile and occasionally slightly wonky.”
+
+         </p>
+    </div>
+    <section>
+        <h1>works</h1>
+    </section>
+    <div class="container card1">
+        <h5>Good Bad Digitalisation</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <div class="container card2">
+        <h5>Stylist</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <div class="container card3">
+        <h5>Bafta Catalogue Covers</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <div class="container card4">
+      <h5>Célébrer La Terre</h5>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <footer>
+      <p>Get the PEKKA newsletter</p>
+      <h1>PEKKA@AGENTPEKKA.COM</h1>
+    </footer>
+  </body> 
+</html>
